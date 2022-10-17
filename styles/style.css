@@ -86,9 +86,8 @@
 .two-columns {
   width: 80%;
   min-width: 784px;
-  justify-content: space-between;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 
 .two-columns__brief {
@@ -124,6 +123,58 @@
   font-weight: 600;
 }
 
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  width: 60%;
+  margin: 100px auto 20px;
+  text-align: center;
+
+}
+
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  width: 60%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.table {
+  width: 1100px;
+  margin: 60px auto 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  row-gap: 60px;
+
+}
+
+.table__cell {
+  width: 250px;
+}
+
+.table__heading {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600
+}
+
+.table__text {
+  margin: 0;
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
