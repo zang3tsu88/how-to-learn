@@ -1,4 +1,4 @@
-.page {
+ .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -128,6 +128,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .section-title {
   line-height: 1.15;
   font-size: 60px;
@@ -149,16 +150,18 @@
 
 .table {
   width: 1100px;
-  margin: 60px auto 100px;
+  margin: 0px auto 100px;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-content: space-between;
-  row-gap: 60px;
+  /*row-gap: 60px;*/
 
 }
 
 .table__cell {
   width: 250px;
+  margin-top: 60px;
 }
 
 .table__heading {
@@ -176,10 +179,176 @@
   font-weight: normal;
 }
 
+.feynman {
+  position: relative;
+  height: 890px;
+  background-color: #f2f2f2;
+  z-index: -1;
+
+}
+
+.feynman__portrait {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.feynman__title {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  width: 648px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.kaufman {
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -210px;
+  z-index: 0;
+  background-size: contain; /* Не пойму зачем оно и как работает, но треугольник лучше встает как на макете. Без него он чуууть левее и ниже*/
+}
+
+.section-title_theme_dark {
+  color: white;
+  margin: 90px auto 20px;
+  width: 60%;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  margin: 0;
+  width: 60%;
+}
+
+.table_theme_dark {
+  margin: 0 auto 90px;
+  z-index: 1;
+}
+
+  /*
+  .table_theme_dark {
+  margin: 0 auto 90px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+  /*justify-content: space-between;
+  */
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+  margin: 80px 0px 0px; /* возможно это значение нужно убрать, изменив на отступы над cells. Хотя он изначально идет в исходнике*/
 }
+
+.table__heading_theme_dark {
+  color: white;
+  z-index: 1;
+}
+
+.table__text_theme_dark {
+  color: white;
+  z-index: 1;
+}
+
+.footer {
+  background-color: #1f1f1f;
+  min-height: 350px;
+  display: flex;
+}
+
+.footer__columns {
+  margin: 60px auto 40px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  width: 228px;
+  height: 32px;
+}
+
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  margin: 18px 0px;
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+}
+
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  list-style-type: none;
+  margin: 20px auto 16px;
+  padding: 0;
+}
+
+.footer__social-icon {
+  margin-right: 10px;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color: white;
+}
+
