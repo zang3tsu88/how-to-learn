@@ -157,11 +157,16 @@
   justify-content: space-between;
   align-content: space-between;
   /*row-gap: 60px;*/
-
+  list-style-type: none;
+  padding: 0px;
+  /*
+  Changed table from div to list,
+  so added to last fixes
+  */
 }
 
 .table__cell {
-  width: 250px;
+  width: 250px; /* А тут тоже лучше max-width? */
   margin-top: 60px;
 }
 
@@ -177,7 +182,7 @@
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: normal; /* Везде писал нормал, но ведь мог бы и не писать? нормал это 400 вроде по дефолту? */
 }
 
 .feynman {
