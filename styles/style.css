@@ -45,7 +45,7 @@
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px; /* был выставлен width, посоветовали используйте связку max-width и width:100%.*/
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -57,6 +57,7 @@
 
 .header__link {
   text-decoration: none;
+  color: #2f80ed; /* Не заметил в брифе что цвет не стандартный */
 }
 
 .header__main-illustration {
@@ -133,8 +134,8 @@
   line-height: 1.15;
   font-size: 60px;
   font-weight: 600;
-  width: 60%;
-  margin: 100px auto 20px;
+  max-width: 60%; /* c width исправил на max-width */
+  margin: 0px auto 20px; /* был 100 сверху, но сказали лишний. */
   text-align: center;
 
 }
@@ -149,7 +150,7 @@
 }
 
 .table {
-  width: 1100px;
+  max-width: 1100px; /* c width исправил на max-width */
   margin: 0px auto 100px;
   display: flex;
   flex-wrap: wrap;
@@ -181,9 +182,9 @@
 
 .feynman {
   position: relative;
-  height: 890px;
+  min-height: 890px;  /* исправил с height */
   background-color: #f2f2f2;
-  z-index: -1;
+  z-index: 0; /* При отрицательном z-index секция уходит под элемент <main> и  на ссылку не нажать. Не стоит указывать блоку отрицательное значение z-index. Для блока можно явно указать значение 0, и уже от этого отталкиваться для выставления z-index для внутренних элементов. */
 
 }
 
@@ -205,6 +206,7 @@
   padding-top: 100px;
   padding-bottom: 70px;
   text-align: center;
+  z-index: 1;
 }
 
 .feynman__subtitle {
@@ -213,7 +215,7 @@
   font-weight: normal;
   margin: 0;
   text-align: center;
-  z-index: 2;
+  z-index: 1;
 }
 
 .feynman__link {
@@ -225,6 +227,7 @@
   top: 50%;
   text-decoration: none;
   z-index: 1;
+  color: #2f80ed; /* цвет с дефолта исправил на бриф. Пы.Сы. В брифе бы тоже уточнили что цвет не дефолтный, а то не видно)) */
 }
 
 .kaufman {
@@ -243,20 +246,28 @@
   background-repeat: no-repeat;
   position: absolute;
   right: -210px;
+  top: 0; /* Не выставил эту величину */
   z-index: 0;
   background-size: contain; /* Не пойму зачем оно и как работает, но треугольник лучше встает как на макете. Без него он чуууть левее и ниже*/
+
+  /*
+  Это св-во работает работает для изображений вставленных с помощью св-в семейства background(для изображений вставленных через тег img есть св-во с аналогичным ф-лом object-fit ). Оно задает размер фонового изображения. Значение contain означает, что если изображение например больше размеров самого блока, то его пропорция уменьшается, чтобы оно точно вписалось в размеры блока.
+  Подробнее https://developer.mozilla.org/ru/docs/Web/CSS/background-size
+  */
 }
 
 .section-title_theme_dark {
   color: white;
   margin: 90px auto 20px;
   width: 60%;
+  z-index: 1; /* не выставил индекс и треугольник залезал на текст */
 }
 
 .section-subtitle_theme_dark {
   color: white;
   margin: 0;
   width: 60%;
+  z-index: 1;
 }
 
 .table_theme_dark {
