@@ -1,0 +1,11 @@
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  text-decoration: none;
+  z-index: 1;
+  color: #2f80ed; /* цвет с дефолта исправил на бриф. Пы.Сы. В брифе бы тоже уточнили что цвет не дефолтный, а то не видно)) */
+}

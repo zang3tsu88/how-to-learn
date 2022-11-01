@@ -1,0 +1,6 @@
+.section-title_theme_dark {
+  color: white;
+  margin: 90px auto 20px;
+  width: 60%;
+  z-index: 1; /* не выставил индекс и треугольник залезал на текст */
+}

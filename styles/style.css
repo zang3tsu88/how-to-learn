@@ -143,7 +143,6 @@
   max-width: 60%; /* c width исправил на max-width */
   margin: 0px auto 20px; /* был 100 сверху, но сказали лишний. */
   text-align: center;
-
 }
 
 .section-subtitle {

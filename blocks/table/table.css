@@ -1,0 +1,15 @@
+.table {
+  max-width: 1100px; /* c width исправил на max-width */
+  margin: 0px auto 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  /*row-gap: 60px;*/
+  list-style-type: none;
+  padding: 0px;
+  /*
+  Changed table from div to list,
+  so added to last fixes
+  */
+}

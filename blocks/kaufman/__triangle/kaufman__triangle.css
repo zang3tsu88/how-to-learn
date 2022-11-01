@@ -1,0 +1,16 @@
+.kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  width: 877px;
+  height: 877px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -210px;
+  top: 0; /* Не выставил эту величину */
+  z-index: 0;
+  background-size: contain; /* Возможно должно стоять значение cover. Точно не вижу */
+
+  /*
+  Это св-во работает работает для изображений вставленных с помощью св-в семейства background(для изображений вставленных через тег img есть св-во с аналогичным ф-лом object-fit ). Оно задает размер фонового изображения. Значение contain означает, что если изображение например больше размеров самого блока, то его пропорция уменьшается, чтобы оно точно вписалось в размеры блока.
+  Подробнее https://developer.mozilla.org/ru/docs/Web/CSS/background-size
+  */
+}

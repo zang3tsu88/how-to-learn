@@ -1,0 +1,12 @@
+.footer__column-links {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  list-style-type: none;
+  margin: 20px auto 16px;
+  padding: 0;
+  /*Возможно нужно задать display: flex
+  что бы лучше иконки выровнить. По макету мелко
+  и не понятно. */
+}

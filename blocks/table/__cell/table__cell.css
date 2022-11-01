@@ -1,0 +1,4 @@
+.table__cell {
+  width: 250px; /* А тут тоже лучше max-width? */
+  margin-top: 60px;
+}

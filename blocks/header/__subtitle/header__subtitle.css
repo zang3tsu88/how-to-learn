@@ -1,0 +1,10 @@
+.header__subtitle {
+  max-width: 388px; /* был выставлен width, посоветовали используйте связку max-width и width:100%.*/
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+  z-index: 2;
+}
