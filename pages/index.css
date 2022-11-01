@@ -41,3 +41,10 @@
 @import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
+
+@import url(../blocks/rotation/rotation.css);
+@import url(../blocks/techniques/techniques.css);
+
+
+/* Perhaps feyman title padding 100 needs to go to feyman block ** Maybe padding-top 100px to section.digits
+*/
