@@ -1,0 +1,9 @@
+.cards__item {
+  margin-top: 60px;
+  max-width: 240px;
+  text-align: center;
+}
+
+.cards__item:last-child {
+  margin-right: 340px;
+}
