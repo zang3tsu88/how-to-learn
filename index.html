@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vendor/normalize.css">
+  <!-- <link rel="stylesheet" href="./vendor/normalize.css"> -->
   <link rel="stylesheet" href="./pages/index.css">
   <!--
   <link rel="stylesheet" href="./styles/style.css">
@@ -152,7 +152,9 @@
           <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
           <h3 class="khan__quote-author">Джордж Лукас</h3>
           <h4 class="khan__quote-author-subline">Кинорежиссер, продюсер</h4>
-          <div class="khan__book-container"><img src="./images/khan-book.jpg" alt="Иллюстрация книги Сальмана Хана: Весь мир - школа" class="khan__book-pic"><a href="#" class="khan__buy-link">Купить книгу&nbsp;&rarr;</a></div>
+          <div class="khan__book-container">
+            <img src="./images/khan-book.jpg" alt="Иллюстрация книги Сальмана Хана: Весь мир - школа" class="khan__book-pic">
+            <a href="#" class="khan__buy-link">Купить книгу&nbsp;&rarr;</a></div>
         </div>
 
       </section>
@@ -212,17 +214,24 @@
         <ul class="resourses__logo-zone">
           <li>
           <a href="#" class="resourses__link">
-            <img src="./images/logo/resources-arzamas.svg" alt=""></a></li>
+            <img class="resourses__logo" src="./images/logo/resources-arzamas.svg" alt="логотип арзамас"></a></li>
           <li>
           <a href="#" class="resourses__link">
-            <img src="./images/logo/resources-n1.svg" alt=""></a></li>
+            <img class="resourses__logo" src="./images/logo/resources-n1.svg" alt="логотип н1"></a></li>
           <li>
           <a href="#" class="resourses__link">
-            <img src="./images/logo/resources-strelka.svg" alt=""></a></li>
+            <img class="resourses__logo" src="./images/logo/resources-strelka.svg" alt="логотип стрелка"></a></li>
           <li>
           <a href="#" class="resourses__link">
-            <img src="./images/logo/resources-polka.svg" alt=""></a></li>
+            <img class="resourses__logo" src="./images/logo/resources-polka.svg" alt="логотип полка"></a></li>
         </ul>
+        <!--  Указано в задании:
+          Блок resources, элемент link. Оберните логотипы (блок resources,
+элемент logo) в ссылки. В качестве URL можно использовать ‘#’
+
+          Подразумевая надо использовать img.. но не лучше было просто через стили добавить картинки к ссылкам? Или тогда слабовидящие без текста в ссылке не смогли бы прочесть?
+          АЛЬТ лучше называть так, или может "ссылка на полька".. Хотя тогда скринридер прочтет "ссылка, ссылка на полька". Тогда тут у меня "ссылка, изображение логотип полька"
+        -->
       </section>
 
     </main>
