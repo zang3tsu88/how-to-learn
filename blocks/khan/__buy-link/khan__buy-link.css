@@ -4,4 +4,5 @@
   line-height: 42px;
   font-size: 30px;
   font-weight: 400;
+  height: fit-content; /* without it the block takes alot of space and hover opacity effect gets triggered on the whole area */
 }
