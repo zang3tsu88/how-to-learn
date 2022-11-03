@@ -6,3 +6,8 @@
   display: flex;
   justify-content: center;
 }
+
+.video__iframes > li:first-child {
+  margin-right: 20px;
+}
+/* Не много не понял, а почему? У меня же отображалось корректно в браузерах предыдущая версия. */

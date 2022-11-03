@@ -14,7 +14,7 @@
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/two-columns/__brief/two-columns__brief.css);
 @import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
-@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css); /*last child goes in paragraph or separate. Same place probably */
+@import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
 @import url(../blocks/two-columns/__span/two-columns__span.css);
 
 @import url(../blocks/techniques/techniques.css);
@@ -41,6 +41,7 @@
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/table/table.css);
 @import url(../blocks/table/__cell/table__cell.css);
+@import url(../blocks/table/__heading/table__heading.css);
 @import url(../blocks/table/__text/table__text.css);
 
 @import url(../blocks/khan/khan.css);
