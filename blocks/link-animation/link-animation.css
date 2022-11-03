@@ -1,7 +1,9 @@
 .link-animation {
- transition: opacity 250ms ease-out;
+ transition: opacity 250ms ease-out,
+             transform 200ms ease-out;
 }
 
 .link-animation:hover {
   opacity: 0.6;
+  transform: translateX(10px);
 }
